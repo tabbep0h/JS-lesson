@@ -1,0 +1,22 @@
+button{
+    display:flex;
+    flex-direction: column;
+}
+input{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 20px;
+}
+.btn{
+    display:flex;
+    width: 200px;
+    justify-content: center;  
+}
+.task4{
+    display: flex;
+    align-items: center;
+}
+.my-class{
+    color: red;
+}

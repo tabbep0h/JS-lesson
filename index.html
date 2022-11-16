@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src = './assets/js/main.js'></script>
+    <title>Lesson-13 - DOM-Дерево</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    
+    
+    <!-- Задачи на основы работы с DOM в JavaScript -->
+
+    
+    <!-- //Задача№1//
+    <button onclick="alert('Привет!')">Нажми на меня</button>   -->
+    
+    <!-- /Задача №2//
+    <button onclick="buttonClick()">Нажми на меня</button>  
+    <input type="text" id="input" value="???">--> 
+    
+    <!-- //Задача №3//
+    <button onclick="buttonClick()">Нажми на меня</button> 
+    <input type="text" id="input" value="???"> -->
+       
+    <!-- //Задача №4//
+    <button onclick = "buttonClick()">Нажми на меня</button> 
+    <input type="text" id = "input" placeholder="Введите число!">-->
+       
+    <!-- //Задача №5//
+    <button onclick="buttonClick()">Нажми на меня</button>        
+    <input type="text" id="input1" value="???"><input type="text" id="input2" value="!!!"> 
+    <input type="button" onclick = "buttonClick(this)"  value = "Нажми на меня" id = 'input'> //Задача №6// -->
+       
+    <!-- //Задача №7//
+    <button onclick = "buttonClick()">Нажми на меня</button> 
+    <input type="text" id = "input" value="Какой-то текст">--> 
+   
+    <!-- //Задача №8//
+    <button onclick = "buttonClick1()">Заблокировать</button> 
+    <button onclick = "buttonClick2()">Разблокировать</button>
+    <input type="text" id = "input" value = "Какой-то текст"> -->
+    
+
+    <!---ЗАДАЧИ ДЛЯ РЕШЕНИЯ-->
+    
+
+    <!-- //Задача №1,2,3,4//
+    <button onclick = "alert('Привет!')">Нажми на меня</button>
+    <button onmouseover = "alert('Привет!')">Наведи на меня</button>  
+    <button ondblclick = "alert('Привет!')">Нажми на меня</button>   
+    <button onmouseleave = "alert('Привет!')">Наведи на меня</button> -->
+
+    <!-- //Задача №5//
+    <input type="text" id = "input" value = "Ку-ку">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+
+    <!-- //Задача №6//
+    <input type="text" id = "input" value = "Ку-ку">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+
+    <!-- //Задача №7//
+    <img id="change_image" src="./assets/img/1.jpg">
+    <br>
+    <button onclick="change_image.src='./assets/img/2.jpg'">Нажми на меня!</button> -->
+
+    <!-- //Задача №8//
+    <input onclick = "buttonClick()" id = "input" value="Нажми на меня"> -->
+
+    <!-- //Задача №9//
+    <input onclick = "buttonClick()" id = "input" value="Нажми на меня"> -->
+
+    <!-- //Задача №10//
+    <input onmousedown = "buttonClick()" onmouseout="buttonUnclick()" id = "input" value="Нажми на меня"> -->
+
+    <!-- //Задача №11//
+    <button onclick = "buttonClick()" id = "input">Нажми на меня</button> -->
+    
+    <!-- //Задача №12//
+    <button onclick = "buttonClick()" id = "input">Нажми на меня</button> -->
+
+    <!-- //Задача №13//
+    <img src="./assets/img/1.jpg" onmouseover="imgClick()" onmouseout = "unimgClick()" id = "input">  -->
+
+    <!-- //Задача №14//
+    <button onclick = "buttonClick()" >Нажми на меня</button>
+    <input onmousedown = "buttonClick()" id = "input" value="Нажми на меня">  -->
+
+    <!-- //Задача №15//
+    <button onclick = "buttonClick()" >Нажми на меня</button>
+    <button onclick = "buttonClick2()" >Нажми потом на меня</button>
+    <input onmousedown = "buttonClick()" id = "input" value="Ку-ку"> -->
+
+    <!-- //Задача №16//
+    <button onclick = "buttonClick()" >Нажми на меня</button>
+    <input onmousedown = "buttonClick()" id = "input" value="Нажми на меня"> -->
+
+    <!-- //Задача №17//
+    <p>Это input type="submit".</p>
+    <input type = "submit" onclick = "buttonClick()" id = "input" value = "Нажми на меня">
+    
+    <input class = "unvb" type = "submit" onclick = "buttonClick2()" id = "input2" value = "Нажми чтобы отблакировать элемент">
+    <style>
+        .unvb{
+            display: none;
+        }
+    </style> -->
+    
+    <!-- <button onclick = "buttonClick()" >Нажми на меня</button>
+    <input onmousedown = "buttonClick()" id = "input" value="Нажми на меня"> -->
+        
+    <!-- //Задача №18//
+    <h2>Кнопка считает кол-во нажатий по ней.</h2>
+    <input type="submit" onclick="go(this)" value="0"> -->
+
+    <!-- //Задача №19//
+    <input id = "input" value="ку-ку">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+    
+    <!-- //Задача №20//
+    <input id = "input" class = "eee www sss" value="ку-ку">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+
+    <!-- //Задача №21//
+    <input id = "input" value="Привет!">
+    <input id = "input2" value="Пока!">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+
+    <!-- //Задача №22//
+    <input type = "text" pattern="[0-9]" id = "input" value="" placeholder="Введите число">
+    <input  id = "input2" value="Здесь появится результат.">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+ 
+    <!-- //Задача №23//
+    <input type = "text" pattern="[0-9]" id = "input" value="" placeholder="Введите число">
+    <input  id = "input2" value="Здесь появится результат.">
+    <button onclick = "buttonClick()">Нажми на меня</button> -->
+
+    <!-- //Задача №24//
+    <button class ="btn" onclick = "buttonClick()">Нажми на меня</button>
+    <style>
+        .btn{
+            cursor:not-allowed;
+        }
+    </style> -->
+    
+    <!-- //Задача №25//
+    <input type="text" value="" id="input">
+	<br><br>
+	<input type="submit" onclick="add('+')" value="Я добавлю +">
+	<input type="submit" onclick="add('-')" value="Я добавлю -">
+	<input type="submit" onclick="add('/')" value="Я добавлю /">
+	<input type="submit" onclick="add('*')" value="Я добавлю *">
+	<br><br>
+	<input type="submit" onclick="add('1')" value="1">
+	<input type="submit" onclick="add('2')" value="2">
+	<input type="submit" onclick="add('3')" value="3">
+	<input type="submit" onclick="add('4')" value="4">
+	<input type="submit" onclick="add('5')" value="5">
+	<input type="submit" onclick="add('6')" value="6">
+	<input type="submit" onclick="add('7')" value="7">
+	<input type="submit" onclick="add('8')" value="8">
+	<input type="submit" onclick="add('9')" value="9">
+	<input type="submit" onclick="add('0')" value="0"> -->
+
+
+    <!-- Задачи на работу с элементами страницы в JavaScript -->
+
+    //Задача№1//
+    <button onclick = "buttonClick()">Нажми на меня</button>
+    <span id = "elem">Это span c тексом</span>
+    <br>
+    <br>
+    //Задача№2//
+    <button onclick = "buttonClick1()">Нажми на меня</button>
+    <span id = "elem2">Это span c тексом</span> 
+    <br>
+    <br>
+    //Задача№3//
+    <h2>Заголовок, не поменяется.</h2>
+    <p>Абзац, поменяется.</p>
+    <p>Абзац, поменяется.</p>
+    <p>Абзац, поменяется.</p>
+
+    <input type="submit" onclick="func()">
+    <br>
+    <br>
+    //Задача№4//
+    <h2 class="zzz">Заголовок с классом zzz.</h2>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p>Просто абзац, не поменяется.</p>
+    <input type="submit" onclick="func1()">
+    <br>
+    <br>
+    //Задача№5//
+    <h2 class="zzz">Заголовок с классом zzz.</h2>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p>Просто абзац, не поменяется.</p>
+    <input type="submit" onclick="func2()">
+    <br>
+    <br>
+
+
+    ЗАДАЧИ ДЛЯ РЕШЕНИЯ
+    <br>
+    <br>
+     //Задача№1//
+     <p id="text">При нажатии на кнопку текст в абзаце поменяется.</p>
+     <input type="submit" value="Нажмите на меня!"  onclick="go()">
+     <br>
+     <br>
+     //Задача№2//
+     <p id="text1">При нажатии на кнопку текст в абзаце поменяется.</p>
+     <input type="submit" value="Нажмите на меня!"  onclick="go1()">
+     <br>
+     <br>
+     //Задача№3//
+     <p id="text2">При нажатии на кнопку абзац станет h3, но текст останется.</p>
+     <input type="submit" value="Нажмите на меня!"  onclick="go2()">
+     <br>
+     <br>
+     //Задача№4//
+     <div class="task4">
+        <input type="text" id="input_first">
+        <p>+</p>
+        <input type="text" id="input_second">
+        <p>=</p>
+        <p id = result>?</p>
+        <input type="submit" value="Нажмите на меня!"  onclick="go3()">
+     </div>
+     <br>
+     <br>
+     //Задача№5//
+     <p class = "text5">При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+     <p class = "text5">При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+     <p class = "text5">При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+     <p class = "text5">При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+     <h2>А я h2 и не поменяюсь!</h2>
+     <input type="submit" value="Нажмите на меня!"  onclick="go4()">
+     <br>
+     <br>
+     //Задача№6//
+     <h2 class="www">Заголовок с классом www.</h2>
+     <p class="www">Абзац с классом www.</p>
+     <p class="www">Абзац с классом www.</p>
+     <p>Просто абзац, не поменяется.</p>
+     <input type="submit" value="Нажмите на меня!"  onclick="go6()">
+     <br>
+     <br>
+     //Задача№7//
+     <h2 class="www1">Заголовок с классом www, не поменяется.</h2>
+     <p class="www1">Абзац с классом www.</p>
+     <p class="www1">Абзац с классом www.</p>
+     <p class="www1">Абзац с классом www.</p>
+     <p>Просто абзац, не поменяется.</p>
+     <input type="submit" value="Нажмите на меня!" onclick="go7()">
+     <br>
+     <br>
+     //Задача№8//
+     <p class = "my-class1">Абзац с class="my-class1".</p>
+     <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="go8()">
+     <br>
+     <br>
+     //Задача№9//
+     <p class = "my-class">Абзац с class="my-class".</p>
+     <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="go9()">
+     <input type="submit" value="Нажми - и я удалю атрибут class для абзаца." onclick="del9()"> 
+     <br>
+     <br>
+     //Задача№10//
+     <p class = "my-class class">Абзац с class="my-class class". Класс "my-class" задает красный цвет..</p>
+     <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="go10()">
+     <input type="submit" value="Нажми - и я изменю атрибут class для абзаца на 'new-class'" onclick="del10()"> 
+     <br>
+     <br>
+     //Задача№11//
+     <input type="text" value="" placeholder="Введи в меня текст!" id="test" onkeyup="go11(this)">
+	 <span id="text1">df</span>
+     <br>
+     <br>
+     //Задача№12//
+     <br>
+     <a href="http://google.ru">ссылка 1</a><br><br>
+     <a href="http://tut.by">ссылка 2</a><br><br>
+     <a href="http://yandex.ru">ссылка 3</a><br><br>
+     <input type="submit" value="Нажмите на меня!"  onclick="go12()">
+     <br>
+     <br>
+     //Задача№13//
+     <p id="text13">При нажатии на кнопку текст в абзаце поменяется.</p>
+	 <input type="submit" value="Нажмите на меня!"  onclick="go13(this)">
+     <br>
+     <br>
+     //Задача№14//
+     <p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+	<p class = "text14">
+		Абзац с текстом.
+	</p>
+     <input type="submit" value="Нажми" onclick="go14()">
+     <br>
+     <br>
+     //Задача№14//
+     <p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+	<p class = "text15">
+		Абзац с текстом.
+	</p>
+     <input type="submit" value="Нажми" onclick="go15()">
+     
+
+    
+    
+     
+</body>
+</html>
